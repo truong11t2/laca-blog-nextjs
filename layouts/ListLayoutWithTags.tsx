@@ -151,7 +151,7 @@ export default function ListLayoutWithTags({
                                   src={images[0]}
                                   className="object-cover object-center md:h-48 lg:h-64"
                                   alt={title}
-                                  width="500"
+                                  width="650"
                                   height="600"
                                 />
                               )}
