@@ -31,7 +31,7 @@ const NewsletterForm = ({
       const { error } = await res.json()
       if (error) {
         setError(true)
-        setMessage('Your e-mail address is invalid or you are already subscribed!')
+        setMessage('Địa chỉ email không đúng hoặc bạn đã đăng ký!')
         return
       }
 
@@ -53,7 +53,7 @@ const NewsletterForm = ({
               className="focus:ring-primary-600 w-72 rounded-md px-4 focus:border-transparent focus:outline-none focus:ring-2 dark:bg-black"
               id="email-input"
               name="email"
-              placeholder={subscribed ? "You're subscribed !  🎉" : 'Enter your email'}
+              placeholder={subscribed ? "Bạn đã đăng ký! 🎉" : 'Nhập địa chỉ email'}
               ref={inputEl}
               required
               type="email"
@@ -69,7 +69,7 @@ const NewsletterForm = ({
             type="submit"
             disabled={subscribed}
           >
-            {subscribed ? 'Thank you!' : 'Sign up'}
+            {subscribed ? 'Cảm ơn bạn!' : 'Đăng ký'}
           </button>
         </div>
       </form>

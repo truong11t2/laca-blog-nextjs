@@ -5,7 +5,7 @@ const headerNavLinks = [
   { href: '/tags', title: 'Thẻ' },
   { href: '/contact', title: 'Liên hệ' },
   { href: '/about', title: 'Giới thiệu' },
-  { href: getGoogleUrl(), title: 'Đăng nhập' },
+  // { href: getGoogleUrl(), title: 'Đăng nhập' },
 ]
 
 export default headerNavLinks
