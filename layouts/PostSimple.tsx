@@ -8,7 +8,7 @@ import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
 import siteMetadata from '@/data/siteMetadata'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
-import NewsletterForm from '@/components/pliny/NewsletterForm'
+import NewsletterForm from '@/components/pliny/ui/NewsletterForm'
 
 interface LayoutProps {
   content: CoreContent<Blog>

@@ -1,6 +1,6 @@
 docker build -t laca-blog-nextjs .
-docker tag laca-blog-nextjs:latest truong11t2/laca-blog-nextjs:1.0.3
-docker push truong11t2/laca-blog-nextjs:1.0.3
+docker tag laca-blog-nextjs:latest truong11t2/laca-blog-nextjs:1.0.4
+docker push truong11t2/laca-blog-nextjs:1.0.4
 
 
 ssh root@192.227.234.198 "sh ./deploy.sh"

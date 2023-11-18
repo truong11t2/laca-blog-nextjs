@@ -1,4 +1,4 @@
-/** @type {import("pliny/config").PlinyConfig } */
+/** @type {import("@/components/pliny/config").PlinyConfig } */
 const siteMetadata = {
   title: 'La Cà',
   author: 'Trường Hoàng',
