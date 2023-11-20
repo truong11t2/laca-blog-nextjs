@@ -17,10 +17,10 @@ export default function Home({ posts }) {
           </h1>
           <h2 className="text-lg prose text-gray-600 dark:text-gray-400 items-center">
             {`Chào mừng đến với ${siteMetadata.title} - ${siteMetadata.description}. Nơi chia sẻ kinh nghiệm du lịch để bạn 
-            có thể tự mình khám phá những vùng đất mới. Mục tiêu của ${siteMetadata.title} là giúp bạn trở thành một người lữ hành thực thụ, đi đến nơi bạn muốn, trải nghiệm nhiều nhất có thể có. Nếu bạn có bất kỳ câu hỏi nào, có thể liên hệ mình `}
+            có thể tự mình khám phá những vùng đất mới. Mục tiêu của ${siteMetadata.title} là giúp bạn trở thành một người lữ hành thực thụ, đi đến nơi bạn muốn, trải nghiệm nhiều nhất có thể có. Nếu bạn có bất kỳ câu hỏi hay những đề xuất, có thể liên hệ mình `}
             <Link href="/contact">tại đây</Link>
-            {'. Tất cả bài viết, được liệt kê ở mục '}
-            <Link href="/blog">bài viết</Link>
+            {'. Tất cả bài viết, được liệt kê ở liên kết '}
+            <Link href="/blog">này</Link>
             {'. Hi vọng bạn tìm thấy những điều bổ ích!'}
           </h2>
         </div>
