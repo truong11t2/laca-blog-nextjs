@@ -15,14 +15,14 @@ export default function Home({ posts }) {
           <h1 className="pb-6 text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Xin chào!
           </h1>
-          <p className="text-lg prose text-gray-600 dark:text-gray-400">
+          <text className="text-lg prose text-gray-600 dark:text-gray-400">
             {`Chào mừng đến với ${siteMetadata.title} - ${siteMetadata.description}. Nơi chia sẻ kinh nghiệm du lịch để bạn 
             có thể tự mình khám phá những vùng đất mới. Mục tiêu của ${siteMetadata.title} là giúp bạn trở thành một người lữ hành thực thụ, đi đến nơi bạn muốn, trải nghiệm nhiều nhất có thể có. Nếu bạn có bất kỳ câu hỏi hay những đề xuất, có thể liên hệ mình `}
             <Link href="/contact">tại đây</Link>
             {'. Tất cả bài viết, được liệt kê ở liên kết '}
             <Link href="/blog">này</Link>
             {'. Hi vọng bạn tìm thấy những điều bổ ích!'}
-          </p>
+          </text>
         </div>
         {/* <div className="flex items-center justify-center mx-2 my-12 w-[300px] sm:w-[400px] md:w-[550px]">
           <NewsletterForm

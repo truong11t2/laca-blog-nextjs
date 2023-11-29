@@ -55,6 +55,9 @@ export default function Page() {
               <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
                 Cambodia
               </td>
+              <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
+                Thailand
+              </td>
               <td className="px-1 py-1 max-w-fit">
                 <Image
                   src={`/static/img/country-flags/TH.svg`}
@@ -64,9 +67,6 @@ export default function Page() {
                   height="100"
                   style={imageStyle}
                 />
-              </td>
-              <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
-                Thailand
               </td>
             </tr>
             <tr className="whitespace-nowrap">
@@ -83,6 +83,9 @@ export default function Page() {
               <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
                 Singapore
               </td>
+              <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
+                Malaysia
+              </td>
               <td className="px-1 py-1 max-w-fit">
                 <Image
                   src={`/static/img/country-flags/MY.svg`}
@@ -92,9 +95,6 @@ export default function Page() {
                   height="100"
                   style={imageStyle}
                 />
-              </td>
-              <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
-                Malaysia
               </td>
             </tr>
             <tr className="whitespace-nowrap">
@@ -111,6 +111,9 @@ export default function Page() {
               <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
                 India
               </td>
+              <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
+                Japan
+              </td>
               <td className="px-1 py-1 max-w-fit">
                 <Image
                   src={`/static/img/country-flags/JP.svg`}
@@ -120,9 +123,6 @@ export default function Page() {
                   height="100"
                   style={imageStyle}
                 />
-              </td>
-              <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
-                Japan
               </td>
             </tr>
             <tr className="whitespace-nowrap">
@@ -139,6 +139,9 @@ export default function Page() {
               <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
                 Sri Lanka
               </td>
+              <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
+                Maldives
+              </td>
               <td className="px-1 py-1 max-w-fit">
                 <Image
                   src={`/static/img/country-flags/MV.svg`}
@@ -148,9 +151,6 @@ export default function Page() {
                   height="100"
                   style={imageStyle}
                 />
-              </td>
-              <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
-                Maldives
               </td>
             </tr>
             <tr className="whitespace-nowrap">
@@ -167,6 +167,9 @@ export default function Page() {
               <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
                 Myanmar
               </td>
+              <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
+                Nepal
+              </td>
               <td className="px-1 py-1 max-w-fit">
                 <Image
                   src={`/static/img/country-flags/NP.svg`}
@@ -176,9 +179,6 @@ export default function Page() {
                   height="55"
                   style={imageStyle}
                 />
-              </td>
-              <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
-                Nepal
               </td>
             </tr>
             <tr className="whitespace-nowrap">
@@ -193,7 +193,11 @@ export default function Page() {
                 />
               </td>
               <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
-                Republic of Korea
+                <p>South</p>
+                <p>Korea</p>
+              </td>
+              <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
+                Viet Nam
               </td>
               <td className="px-1 py-1 max-w-fit">
                 <Image
@@ -204,9 +208,6 @@ export default function Page() {
                   height="100"
                   style={imageStyle}
                 />
-              </td>
-              <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
-                Viet Nam
               </td>
             </tr>
           </tbody>
@@ -235,6 +236,9 @@ export default function Page() {
               <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
                 Germany
               </td>
+              <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
+                Netherlands
+              </td>
               <td className="px-1 py-1 max-w-fit">
                 <Image
                   src={`/static/img/country-flags/NL.svg`}
@@ -244,9 +248,6 @@ export default function Page() {
                   height="100"
                   style={imageStyle}
                 />
-              </td>
-              <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
-                Netherlands
               </td>
             </tr>
             <tr className="whitespace-nowrap">
@@ -261,7 +262,11 @@ export default function Page() {
                 />
               </td>
               <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
-                Czech Republic
+                <p>Czech</p>
+                <p>Republic</p>
+              </td>
+              <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
+                France
               </td>
               <td className="px-1 py-1 max-w-fit">
                 <Image
@@ -272,9 +277,6 @@ export default function Page() {
                   height="100"
                   style={imageStyle}
                 />
-              </td>
-              <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
-                France
               </td>
             </tr>
             <tr className="whitespace-nowrap">
@@ -291,6 +293,9 @@ export default function Page() {
               <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
                 Italy
               </td>
+              <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
+                Switzerland
+              </td>
               <td className="px-1 py-1 max-w-fit">
                 <Image
                   src={`/static/img/country-flags/CH.svg`}
@@ -300,9 +305,6 @@ export default function Page() {
                   height="66"
                   style={imageStyle}
                 />
-              </td>
-              <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
-                Switzerland
               </td>
             </tr>
           </tbody>
