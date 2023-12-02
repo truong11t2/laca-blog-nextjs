@@ -89,7 +89,7 @@ export default function Home({ posts }) {
                         <Link
                           href={`/blog/${slug}`}
                           className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                          aria-label={`Read "${title}"`}
+                          aria-label={`Xem thêm "${title}"`}
                         >
                           Xem thêm &rarr;
                         </Link>
@@ -111,7 +111,7 @@ export default function Home({ posts }) {
           <Link
             href="/blog"
             className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-            aria-label="All posts"
+            aria-label="Tất cả bài viết"
           >
             Tất cả bài viết &rarr;
           </Link>
