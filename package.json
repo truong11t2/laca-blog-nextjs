@@ -24,6 +24,7 @@
     "kbar": "^0.1.0-beta.44",
     "next": "13.4.19",
     "next-contentlayer": "0.3.4",
+    "next-share": "^0.27.0",
     "next-themes": "^0.2.1",
     "pliny": "0.1.2",
     "postcss": "^8.4.24",

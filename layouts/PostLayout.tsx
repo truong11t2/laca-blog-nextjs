@@ -10,6 +10,7 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 import NewsletterForm from '@/components/pliny/ui/NewsletterForm'
+import { EmailShare, FacebookShare, TwitterShare } from '@/components/social-share/SocialShare'
 
 const editUrl = (path) => `${siteMetadata.siteRepo}/blob/main/data/${path}`
 const discussUrl = (path) =>
@@ -31,7 +32,7 @@ interface LayoutProps {
 }
 
 export default function PostLayout({ content, authorDetails, next, prev, children }: LayoutProps) {
-  const { filePath, path, slug, date, id, title, tags, readingTime } = content
+  const { filePath, path, slug, date, id, title, tags, readingTime, summary } = content
   const basePath = path.split('/')[0]
 
   return (
@@ -56,6 +57,19 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
               </div>
             </div>
           </header>
+          <div className="py-2 space-x-4 flex items-right justify-center">
+            <FacebookShare
+              url={'https://laca.fun/' + content.path}
+              quote={content.title}
+              hashtag={undefined}
+            />
+            <TwitterShare url={'https://laca.fun/' + content.path} title={content.title} />
+            <EmailShare
+              url={'https://laca.fun/' + content.path}
+              subject={content.title}
+              body={summary}
+            />
+          </div>
           <div className="grid-rows-[auto_1fr] divide-y divide-gray-200 pb-8 dark:divide-gray-700 xl:grid xl:grid-cols-4 xl:gap-x-6 xl:divide-y-0">
             <dl className="pb-10 pt-6 xl:border-b xl:border-gray-200 xl:pt-11 xl:dark:border-gray-700">
               <dt className="sr-only">Authors</dt>
@@ -94,8 +108,22 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
             </dl>
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3 xl:row-span-2 xl:pb-0">
               <div className="prose max-w-none pb-8 pt-10 dark:prose-invert">{children}</div>
+              <div className="py-2 space-x-4 flex items-left justify-left">
+                <p>Chia sẻ bài viết:</p>
+                <FacebookShare
+                  url={'https://laca.fun/' + content.path}
+                  quote={content.title}
+                  hashtag={undefined}
+                />
+                <TwitterShare url={'https://laca.fun/' + content.path} title={content.title} />
+                <EmailShare
+                  url={'https://laca.fun/' + content.path}
+                  subject={content.title}
+                  body={summary}
+                />
+              </div>
               <div className="pb-6 pt-6 text-sm text-gray-700 dark:text-gray-300">
-                <p className="font-semibold text-lg">
+                <p className="pb-2 font-semibold text-lg">
                   Nếu bạn thấy bài viêt này hữu ích. Bạn có thể tiếp thêm động lực cho mình.
                 </p>
                 <div className="grid grid-cols-2 gap-4 place-items-center h-30 ...">

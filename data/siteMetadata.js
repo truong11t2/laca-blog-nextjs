@@ -8,7 +8,7 @@ const siteMetadata = {
   siteUrl: 'https://laca.fun',
   siteRepo: 'https://github.com/truong11t2',
   image: '/static/img/avatar.png',
-  socialBanner: '/static/img/twitter-card.png',
+  socialBanner: '/static/img/social-banner.png',
   email: 'truong11t2@gmail.com',
   github: 'https://github.com/truong11t2',
   twitter: 'https://twitter.com/truong11t2',

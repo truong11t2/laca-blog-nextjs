@@ -8,7 +8,7 @@ const projectsData = [
   {
     title: 'Tailwind Nextjs Starter Blog',
     description: `What this blog is based on! I maintain it seperately as a side project. An out of the box personal portfolio template, beautifully styled, completely customisable and built on one of the hottest frontend frameworks.`,
-    imgSrc: '/static/img/demo-twitter-card.png',
+    imgSrc: '/static/img/twitter-card.png',
     href: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
   },
   {
