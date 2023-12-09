@@ -6,6 +6,8 @@ import {
   TwitterIcon,
   EmailShareButton,
   EmailIcon,
+  LinkedinShareButton,
+  LinkedinIcon,
 } from 'next-share'
 
 export function FacebookShare({ url, quote, hashtag }) {
@@ -29,5 +31,13 @@ export function EmailShare({ url, subject, body }) {
     <EmailShareButton url={url} subject={subject} body={body}>
       <EmailIcon size={32} round />
     </EmailShareButton>
+  )
+}
+
+export function LinkedInShare({ url }) {
+  return (
+    <LinkedinShareButton url={url}>
+      <LinkedinIcon size={32} round />
+    </LinkedinShareButton>
   )
 }

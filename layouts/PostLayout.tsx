@@ -10,7 +10,12 @@ import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
 import NewsletterForm from '@/components/pliny/ui/NewsletterForm'
-import { EmailShare, FacebookShare, TwitterShare } from '@/components/social-share/SocialShare'
+import {
+  EmailShare,
+  FacebookShare,
+  LinkedInShare,
+  TwitterShare,
+} from '@/components/social-share/SocialShare'
 
 const editUrl = (path) => `${siteMetadata.siteRepo}/blob/main/data/${path}`
 const discussUrl = (path) =>
@@ -64,6 +69,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
               hashtag={undefined}
             />
             <TwitterShare url={'https://laca.fun/' + content.path} title={content.title} />
+            <LinkedInShare url={'https://laca.fun/' + content.path} />
             <EmailShare
               url={'https://laca.fun/' + content.path}
               subject={content.title}
@@ -116,6 +122,7 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                   hashtag={undefined}
                 />
                 <TwitterShare url={'https://laca.fun/' + content.path} title={content.title} />
+                <LinkedInShare url={'https://laca.fun/' + content.path} />
                 <EmailShare
                   url={'https://laca.fun/' + content.path}
                   subject={content.title}
