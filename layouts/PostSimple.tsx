@@ -74,7 +74,7 @@ export default function PostLayout({ content, next, prev, children }: LayoutProp
                   </div>
                 )}
               </div>
-              <div className="flex items-center justify-center mx-2 my-12 w-[300px] sm:w-[400px] md:w-[550px]">
+              <div className="flex items-center justify-center mx-2 my-12">
                 <NewsletterForm title="Nhận bài viết mới nhất qua mail" apiUrl="/api/newsletter" />
               </div>
             </footer>

@@ -170,11 +170,11 @@ export default function ListLayoutWithTags({
             {pagination && pagination.totalPages > 1 && (
               <Pagination currentPage={pagination.currentPage} totalPages={pagination.totalPages} />
             )}
-            <div className="flex items-center justify-center mx-2 my-12 w-[300px] sm:w-[400px] md:w-[550px]">
-              <NewsletterForm title="Nhận bài viết mới nhất qua mail" apiUrl="/api/newsletter" />
-            </div>
           </div>
         </div>
+      </div>
+      <div className="flex items-center justify-center mx-2 my-12 ">
+        <NewsletterForm title="Nhận bài viết mới nhất qua mail" apiUrl="/api/newsletter" />
       </div>
     </>
   )
