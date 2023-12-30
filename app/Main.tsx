@@ -16,8 +16,7 @@ export default function Home({ posts }) {
             Xin chào!
           </h1>
           <text className="text-lg prose text-gray-600 dark:text-gray-400">
-            {`Chào mừng đến với ${siteMetadata.title} - ${siteMetadata.description}. Nơi chia sẻ kinh nghiệm du lịch để bạn 
-            có thể tự mình khám phá những vùng đất mới. Mục tiêu của ${siteMetadata.title} là giúp bạn trở thành một người lữ hành thực thụ, đi đến nơi bạn muốn, trải nghiệm nhiều nhất có thể có. Nếu bạn có bất kỳ câu hỏi hay những đề xuất, có thể liên hệ mình `}
+            {`Chào mừng đến với ${siteMetadata.title} - ${siteMetadata.description}. Nếu bạn có bất kỳ câu hỏi hay những đề xuất, có thể liên hệ mình `}
             <Link href="/contact">tại đây</Link>
             {'. Tất cả bài viết, được liệt kê ở liên kết '}
             <Link href="/blog">này</Link>
@@ -102,12 +101,9 @@ export default function Home({ posts }) {
           })}
         </ul>
       </div>
-      <div className="flex items-center justify-center mx-2 my-12 w-[300px] sm:w-[400px] md:w-[550px]">
-        {/* <EmailSignupForm /> */}
-        <NewsletterForm title="Nhận bài viết mới nhất qua mail" apiUrl="/api/newsletter" />
-      </div>
+
       {posts.length > MAX_DISPLAY && (
-        <div className="flex justify-end text-base font-medium leading-6">
+        <div className="flex justify-left text-base font-medium leading-6">
           <Link
             href="/blog"
             className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
@@ -117,6 +113,10 @@ export default function Home({ posts }) {
           </Link>
         </div>
       )}
+      <div className="flex items-center justify-center mx-2 my-12">
+        {/* <EmailSignupForm /> */}
+        <NewsletterForm title="Nhận bài viết mới nhất qua mail" apiUrl="/api/newsletter" />
+      </div>
     </>
   )
 }
