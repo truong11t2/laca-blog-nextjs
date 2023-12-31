@@ -101,7 +101,7 @@ export const Blog = defineDocumentType(() => ({
     title: { type: 'string', required: true },
     date: { type: 'date', required: true },
     tags: { type: 'list', of: { type: 'string' }, default: [] },
-    lastmod: { type: 'date' },
+    lastmod: { type: 'date', required: true },
     draft: { type: 'boolean' },
     summary: { type: 'string' },
     images: { type: 'list', of: { type: 'string' } },
@@ -119,7 +119,7 @@ export const Blog = defineDocumentType(() => ({
         '@type': 'BlogPosting',
         headline: doc.title,
         datePublished: doc.date,
-        dateModified: doc.lastmod || doc.date,
+        dateModified: doc.lastmod,
         description: doc.summary,
         image: doc.images ? doc.images[0] : siteMetadata.socialBanner,
         url: `${siteMetadata.siteUrl}/${formatSlug(
