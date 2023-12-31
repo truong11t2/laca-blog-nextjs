@@ -77,6 +77,8 @@ export default function ListLayoutWithTags({
 
   const displayPosts = initialDisplayPosts.length > 0 ? initialDisplayPosts : posts
 
+  displayPosts.sort((a, b) => (a.lastmod > b.lastmod ? -1 : 1))
+
   return (
     <>
       <div>
