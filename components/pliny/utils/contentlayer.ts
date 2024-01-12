@@ -22,13 +22,13 @@ export function dateSortDesc(a: string, b: string) {
 }
 
 /**
- * Sorts a list of MDX documents by date in descending order
+ * Sorts a list of MDX documents by lastmod date in descending order
  *
  * @param {MDXDocumentDate[]} allBlogs
- * @param {string} [dateKey='date']
+ * @param {string} [dateKey='lastmod']
  * @return {*}
  */
-export function sortPosts<T extends MDXDocumentDate>(allBlogs: T[], dateKey: string = 'date') {
+export function sortPosts<T extends MDXDocumentDate>(allBlogs: T[], dateKey: string = 'lastmod') {
   return allBlogs.sort((a, b) => dateSortDesc(a[dateKey], b[dateKey]))
 }
 
