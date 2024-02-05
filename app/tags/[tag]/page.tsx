@@ -1,5 +1,5 @@
 import { slug } from 'github-slugger'
-import { allCoreContent } from 'pliny/utils/contentlayer'
+import { allCoreContent } from '@/components/pliny/utils/contentlayer'
 import siteMetadata from '@/data/siteMetadata'
 import ListLayout from '@/layouts/ListLayoutWithTags'
 import { allBlogs } from 'contentlayer/generated'
