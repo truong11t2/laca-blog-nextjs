@@ -4,7 +4,6 @@ import type { Blog, Authors } from 'contentlayer/generated'
 import Comments from '@/components/Comments'
 import Link from '@/components/Link'
 import PageTitle from '@/components/PageTitle'
-import SectionContainer from '@/components/SectionContainer'
 import Image from '@/components/Image'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
@@ -16,6 +15,9 @@ import {
   LinkedInShare,
   TwitterShare,
 } from '@/components/social-share/SocialShare'
+
+import CommentSection from '@/components/comment/Comments'
+import '@/components/comment/comment.css'
 
 const editUrl = (path) => `${siteMetadata.siteRepo}/blob/main/data/${path}`
 const discussUrl = (path) =>
@@ -165,6 +167,9 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                 </Link>
                 {` • `}
                 <Link href={editUrl(filePath)}>Xem trên GitHub</Link> */}
+              </div>
+              <div className="pb-6 pt-6 text-center text-gray-700 dark:text-gray-300">
+                <CommentSection postId={id} />
               </div>
               {siteMetadata.comments && (
                 <div
