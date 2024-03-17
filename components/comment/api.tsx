@@ -9,7 +9,7 @@ export const createComment = async (postId: string, parentId = null, content) =>
     name: content.name,
   }
   try {
-    const res = await fetch('http://localhost:5000/api/comment/create', {
+    const res = await fetch('/api/comment/create', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -25,7 +25,17 @@ export const createComment = async (postId: string, parentId = null, content) =>
 
 export const getComments = async (postId: string) => {
   try {
-    const res = await fetch('http://localhost:5000/api/comment/' + postId + '/get')
+    const res = await fetch('/api/comment/get/post/' + postId)
+    const data = await res.json()
+    return data
+  } catch (err) {
+    return err.message
+  }
+}
+
+export const getComment = async (commentId: string) => {
+  try {
+    const res = await fetch('/api/comment/get/comment/' + commentId)
     const data = await res.json()
     return data
   } catch (err) {
@@ -39,7 +49,7 @@ export const updateComment = async (commentId: string, content: string) => {
     content: content,
   }
   try {
-    const res = await fetch('http://localhost:5000/api/comment/update', {
+    const res = await fetch('/api/comment/update', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -53,19 +63,9 @@ export const updateComment = async (commentId: string, content: string) => {
   }
 }
 
-export const getComment = async (commentId: string) => {
-  try {
-    const res = await fetch('http://localhost:5000/api/comment/get/' + commentId)
-    const data = await res.json()
-    return data
-  } catch (err) {
-    return err.message
-  }
-}
-
 export const deleteComment = async (commentId: string) => {
   try {
-    const res = await fetch('http://localhost:5000/api/comment/delete/' + commentId, {
+    const res = await fetch('/api/comment/delete/comment' + commentId, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
@@ -80,7 +80,7 @@ export const deleteComment = async (commentId: string) => {
 
 export const deleteComments = async (postId: string) => {
   try {
-    const res = await fetch('http://localhost:5000/api/comment/delete/post/' + postId, {
+    const res = await fetch('/api/comment/delete/post/' + postId, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json',
