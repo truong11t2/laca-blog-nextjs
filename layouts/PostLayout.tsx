@@ -18,6 +18,7 @@ import {
 
 import CommentSection from '@/components/comment/Comments'
 import '@/components/comment/comment.css'
+// import PageView from '@/components/page-view/PageView'
 
 const editUrl = (path) => `${siteMetadata.siteRepo}/blob/main/data/${path}`
 const discussUrl = (path) =>
@@ -59,6 +60,18 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                   </dd>
                 </div>
               </dl>
+              {/* <div className="space-x-2 flex items-center justify-center text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="red"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 512 512"
+                >
+                  <path d="M256,448a32,32,0,0,1-18-5.57c-78.59-53.35-112.62-89.93-131.39-112.8-40-48.75-59.15-98.8-58.61-153C48.63,114.52,98.46,64,159.08,64c44.08,0,74.61,24.83,92.39,45.51a6,6,0,0,0,9.06,0C278.31,88.81,308.84,64,352.92,64,413.54,64,463.37,114.52,464,176.64c.54,54.21-18.63,104.26-58.61,153-18.77,22.87-52.8,59.45-131.39,112.8A32,32,0,0,1,256,448Z"></path>
+                </svg>
+                <PageView postId={id} update={true} />
+              </div> */}
               <div>
                 <PageTitle>{title}</PageTitle>
               </div>
