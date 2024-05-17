@@ -6,7 +6,7 @@ export async function POST(request: Request) {
   console.log(typeof email)
   // Send to backend to store email
   try {
-    const response = await fetch('http://app:5000/api/subscribe/email', {
+    const response = await fetch(process.env.BACKEND_ADDRESS + '/api/subscribe/email', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

@@ -6,7 +6,7 @@ export async function PUT(request: Request) {
   }
   console.log(updatedComment)
   try {
-    const res = await fetch('http://app:5000/api/comment/update', {
+    const res = await fetch(process.env.BACKEND_ADDRESS + '/api/comment/update', {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

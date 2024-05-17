@@ -7,6 +7,7 @@ export const createComment = async (postId: string, parentId = null, content) =>
     content: content.text,
     email: content.email,
     name: content.name,
+    subscribe: content.subscribe,
   }
   try {
     const res = await fetch('/api/comment/create', {

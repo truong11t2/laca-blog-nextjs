@@ -5,7 +5,7 @@ export async function GET(request: Request) {
   // only use with page.ts
   //const postId = request['params']['postId']
   try {
-    const response = await fetch('http://app:5000/api/comment/' + postId + '/get')
+    const response = await fetch(process.env.BACKEND_ADDRESS + '/api/comment/' + postId + '/get')
     const data = await response.json()
     return Response.json(data)
   } catch (error) {

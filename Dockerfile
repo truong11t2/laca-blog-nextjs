@@ -21,6 +21,7 @@ COPY ./data ./data
 COPY ./layouts ./layouts
 COPY ./public ./public
 COPY ./scripts ./scripts
+COPY .env .env
 
 RUN ["npm", "run", "build"]
 

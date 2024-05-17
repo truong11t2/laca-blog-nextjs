@@ -1,15 +1,16 @@
 export async function POST(request: Request) {
-  const { postId, parentId, content, email, name } = await request.json()
+  const { postId, parentId, content, email, name, subscribe } = await request.json()
   const comment = {
     postId: postId,
     parentId: parentId,
     content: content,
     email: email,
     name: name,
+    subscribe: subscribe,
   }
   //console.log(comment)
   try {
-    const res = await fetch('http://app:5000/api/comment/create', {
+    const res = await fetch(process.env.BACKEND_ADDRESS + '/api/comment/create', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
