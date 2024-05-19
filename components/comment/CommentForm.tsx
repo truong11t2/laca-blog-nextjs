@@ -22,13 +22,13 @@ const CommentForm = ({ handleSubmit, submitLabel, hasCancelButton = false, handl
   const onChangeCheckBox = (e) => {
     const name = e.target.name
     const checked = e.target.checked
-    setFormData((prevState) => ({...prevState, [name]: checked}))
+    setFormData((prevState) => ({ ...prevState, [name]: checked }))
   }
 
   const onSubmit = (e) => {
     e.preventDefault()
     handleSubmit(formData)
-    setFormData({ name: '', email: '', text: '', subscribe: false})
+    setFormData({ name: '', email: '', text: '', subscribe: false })
   }
   return (
     <form onSubmit={onSubmit}>
@@ -78,8 +78,8 @@ const CommentForm = ({ handleSubmit, submitLabel, hasCancelButton = false, handl
           // value={formData.subscribe}
           checked={formData.subscribe}
           className="mr-2"
-          />
-          Đăng ký nhận bài viết mới nhất!
+        />
+        Đăng ký nhận bài viết mới nhất!
       </div>
       <div className="space-x-4 pb-4 ...">
         <button

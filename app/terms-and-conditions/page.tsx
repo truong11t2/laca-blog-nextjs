@@ -6,27 +6,18 @@ export default function page() {
     <div className="max-w-screen-md container mx-auto pb-6 items-center justify-center">
       <h2 className="text-2xl font-bold leading-8 tracking-tight mb-8">ĐIỀU KHOẢN SỬ DỤNG</h2>
       <p className="mb-8 font-light">
-        BẠN PHẢI ĐỌC NHỮNG ĐIỀU KHOẢN SỬ DỤNG DƯỚI ĐÂY TRƯỚC KHI SỬ DỤNG TRANG WEB NÀY. VIỆC SỬ DỤNG
-        TRANG WEB NÀY XÁC NHẬN VIỆC CHẤP THUẬN VÀ TUÂN THỦ CÁC ĐIỀU KHOẢN VÀ ĐIỀU KIỆN DƯỚI ĐÂY.
+        BẠN CẦN ĐỌC NHỮNG ĐIỀU KHOẢN SỬ DỤNG DƯỚI ĐÂY TRƯỚC KHI TRUY CẬP LACA.FUN. VIỆC TRUY CẬP
+        LACA.FUN XÁC NHẬN VIỆC CHẤP THUẬN VÀ TUÂN THỦ CÁC ĐIỀU KHOẢN VÀ ĐIỀU KIỆN ĐƯỢC LIỆT KÊ BÊN
+        DƯỚI.
       </p>
       <p className="mb-8 font-light">
         Bằng cách truy cập và/hoặc sử dụng La Cà (laca.fun), người truy cập, người dùng hoặc người
         dùng đã đăng ký (gọi tắt là "người dùng") thừa nhận đã đọc, hiểu và đồng ý chịu sự ràng buộc
         bởi các Điều Khoản Sử Dụng được quy định dưới đây.
       </p>
-      <p className="mb-8 font-light">
-        Người dùng có thể tham khảo thêm Chính sách riêng tư tại{' '}
-        <Link
-          href="/privacy-policy"
-          className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-        >
-          đây
-        </Link>
-        .
-      </p>
       <p className="mb-4 font-light">
         Xin lưu ý rằng La Cà có thể thay đổi, sửa đổi, bổ sung và loại bỏ các Điều Khoản này vào bất
-        cứ thời điểm nào mà không cần thông báo trước. Người dùng phải đọc các Điều Khoản này một
+        cứ thời điểm nào mà không cần thông báo trước. Người dùng cần đọc các Điều Khoản này một
         cách định kỳ. Bằng việc tiếp tục truy cập La Cà sau khi đã có những thay đổi đối với các
         Điều Khoản, người dùng đồng ý và chấp thuận với những thay đổi đó.
       </p>
@@ -61,6 +52,17 @@ export default function page() {
           </div>
         </li>
       </ol>
+
+      <p className="mb-8 font-light">
+        Người dùng có thể tham khảo thêm Chính sách riêng tư tại{' '}
+        <Link
+          href="/privacy-policy"
+          className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+        >
+          đây
+        </Link>
+        .
+      </p>
     </div>
   )
 }

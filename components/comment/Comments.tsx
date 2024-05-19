@@ -83,7 +83,16 @@ const CommentSection = ({ postId }) => {
         <div className="comments-title text-left">Bình luận</div>
         <div className="comment-form-title text-left pb-2">
           Các câu hỏi, cập nhật địa điểm và chuyến đi đều được chào đón. Tuy nhiên, hãy giữ bình
-          luận lịch sự và đúng chủ đề.
+          luận lịch sự và đúng chủ đề. Xem thêm
+          <a
+            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
+            aria-label="Nghi thuc binh luan"
+            href="/blog/cap-nhat-thong-tin-tinh-chinh-xac#nghi-thức-bình-luận"
+          >
+            {' '}
+            nghi thức bình luận{' '}
+          </a>
+          để biết thêm chi tiết.
         </div>
         <CommentForm submitLabel="Gửi" handleSubmit={addComment} handleCancel={undefined} />
       </div>

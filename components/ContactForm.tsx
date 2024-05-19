@@ -58,21 +58,21 @@ const ContactForm: React.FC = () => {
     //     setFormSuccessMessage(data.submission_text)
     //   })
     emailjs
-      .send('service_id', 'template_id', formData, 'public_key')
-      .then((res) => {
-        // console.log(res)
-        setFormSuccess(true)
-        setFormSuccessMessage('Email đã gửi đi. Mình sẽ sớm liên hệ với bạn.')
-        setFormData({
-          name: '',
-          email: '',
-          text: '',
-        })
+    .send('service_6hrop65', 'template_f1t5d0h', formData, 'Jtxa3U7Qevz5rqAc1')
+    .then((res) => {
+      // console.log(res)
+      setFormSuccess(true)
+      setFormSuccessMessage('Email đã gửi đi. Mình sẽ sớm liên hệ với bạn.')
+      setFormData({
+        name: '',
+        email: '',
+        text: '',
       })
-      .catch((error) => {
-        setFormSuccess(false)
-        setFormSuccessMessage('Có lỗi xảy ra. Vui lòng thử lại sau.')
-      })
+    })
+    .catch((error) => {
+      setFormSuccess(false)
+      setFormSuccessMessage('Có lỗi xảy ra. Vui lòng thử lại sau.')
+    })
   }
 
   return (

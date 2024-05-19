@@ -5,14 +5,15 @@ import SocialIcon from '@/components/social-icons'
 export default function Footer() {
   return (
     <footer>
-      <div className="container mx-auto pt-16 pb-6 items-center justify-center">
-        <div className="flex space-x-4">
-          <div className="w-1/2 p-4 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 text-center">
-            <Link href="/privacy-policy">Chính Sách Quyền Riêng Tư</Link>
-          </div>
-          <div className="w-1/2 p-4 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 text-center">
-            <Link href="/terms-and-conditions">Điều Khoản Sử Dụng</Link>
-          </div>
+      <div className="container mx-auto md:space-x-8 md:flex pt-8 pb-6 md:items-center md:justify-center">
+        <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 text-center">
+          <Link href="/privacy-policy">Chính Sách Quyền Riêng Tư</Link>
+        </div>
+        <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 text-center">
+          <Link href="/blog/cap-nhat-thong-tin-tinh-chinh-xac">Cập Nhật & Tính Chính Xác</Link>
+        </div>
+        <div className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400 text-center">
+          <Link href="/terms-and-conditions">Điều Khoản Sử Dụng</Link>
         </div>
       </div>
       <div className="mt-2 flex flex-col items-center">
