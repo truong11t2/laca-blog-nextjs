@@ -89,7 +89,7 @@ export default function ListLayoutWithTags({
           </h1>
         </div>
         <div className="flex sm:space-x-24">
-          <div className="hidden overflow-y-auto max-h-screen h-full sm:flex flex-wrap bg-gray-50 dark:bg-gray-900/70 shadow-md pt-5 dark:shadow-gray-800/40 rounded min-w-[280px] max-w-[280px]">
+          <div className="hidden overflow-y-auto max-h-screen h-full sm:flex flex-wrap bg-gray-50 dark:bg-gray-900/70 shadow-md pt-5 dark:shadow-gray-800/40 rounded min-w-[200px] max-w-[240px]">
             <div className="py-4 px-6">
               {pathname.startsWith('/blog') ? (
                 <h3 className="text-primary-500 font-bold uppercase">Tất cả bài viết</h3>
@@ -124,7 +124,7 @@ export default function ListLayoutWithTags({
               </ul>
             </div>
           </div>
-          <div>
+          <div className="not-prose max-w-[500px]">
             <ul>
               {displayPosts.map((post) => {
                 const { path, date, id, title, images, summary, tags, lastmod } = post
