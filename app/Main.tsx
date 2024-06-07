@@ -20,7 +20,7 @@ export default function Home({ posts }) {
             {`Chào mừng đến với ${siteMetadata.title} - ${siteMetadata.description}. Nếu bạn có bất kỳ câu hỏi hay những đề xuất, có thể liên hệ mình `}
             <Link href="/contact">tại đây</Link>
             {
-              '. Tất cả bài viết là độc lập hoàn toàn không có bất cứ sự chi phối nào và được liệt kê ở liên kết '
+              '. Tất cả bài viết là độc lập, không có bất cứ sự chi phối nào và được liệt kê ở liên kết '
             }
             <Link href="/blog">này</Link>
             {'. Hi vọng bạn tìm thấy những điều bổ ích!'}
