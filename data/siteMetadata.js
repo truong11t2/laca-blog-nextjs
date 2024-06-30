@@ -4,7 +4,7 @@ const siteMetadata = {
   author: 'Trường Hoàng',
   headerTitle: 'La Cà',
   description:
-    'Trang du lịch cho mọi người. Nơi chia sẻ kinh nghiệm để bạn có thể tự mình khám phá những vùng đất mới. Mục tiêu của La Cà là giúp bạn trở thành một người lữ hành thực thụ, đi đến nơi bạn muốn, trải nghiệm nhiều nhất có thể',
+    'Trang du lịch cho mọi người. Nơi chia sẻ kinh nghiệm để bạn có thể du lịch tự túc một cách hoàn toàn',
   language: 'vi',
   siteUrl: 'https://laca.fun',
   siteRepo: 'https://github.com/truong11t2',
