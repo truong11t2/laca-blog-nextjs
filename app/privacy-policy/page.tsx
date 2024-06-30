@@ -4,9 +4,9 @@ import Link from '@/components/Link'
 export default function page() {
   return (
     <div className="max-w-screen-md container mx-auto pb-6 items-center justify-center">
-      <h2 className="text-2xl font-bold leading-8 tracking-tight mb-8">
+      <h1 className="text-2xl font-bold leading-8 tracking-tight mb-8">
         CHÍNH SÁCH QUYỀN RIÊNG TƯ
-      </h2>
+      </h1>
       <div className="mb-8 italic text-right">Sửa đổi lần cuối vào tháng 10 năm 2023</div>
       <p className="mb-8 font-light">
         Nhằm mang lại trải nghiệm tốt nhất cho người dùng trên La Cà (laca.fun), thông tin nhận dạng

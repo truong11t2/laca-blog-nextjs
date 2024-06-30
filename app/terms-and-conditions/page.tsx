@@ -4,7 +4,7 @@ import Link from '@/components/Link'
 export default function page() {
   return (
     <div className="max-w-screen-md container mx-auto pb-6 items-center justify-center">
-      <h2 className="text-2xl font-bold leading-8 tracking-tight mb-8">ĐIỀU KHOẢN SỬ DỤNG</h2>
+      <h1 className="text-2xl font-bold leading-8 tracking-tight mb-8">ĐIỀU KHOẢN SỬ DỤNG</h1>
       <p className="mb-8 font-light">
         BẠN CẦN ĐỌC NHỮNG ĐIỀU KHOẢN SỬ DỤNG DƯỚI ĐÂY TRƯỚC KHI TRUY CẬP LACA.FUN. VIỆC TRUY CẬP
         LACA.FUN XÁC NHẬN VIỆC CHẤP THUẬN VÀ TUÂN THỦ CÁC ĐIỀU KHOẢN VÀ ĐIỀU KIỆN ĐƯỢC LIỆT KÊ BÊN
