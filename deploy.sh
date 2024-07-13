@@ -25,3 +25,8 @@ ssh root@192.227.234.198 "sh ./deploy.sh"
 # docker run --name mongodb --network laca-network -p 27017:27017 -d -v mongo-data:/data/db -e MONGO_INITDB_ROOT_USERNAME=truongt2 -e MONGO_INITDB_ROOT_PASSWORD=zV7tGaQPN1HVrcPp -e MONGO_INITDB_DATABASE=mydb mongo:latest
 # docker run --name laca --network laca-network -d truong11t2/laca-blog:1.0.1
 # docker network create laca-network
+
+## check certificate
+# certbot certificates
+
+# certbot renew --dry-run
