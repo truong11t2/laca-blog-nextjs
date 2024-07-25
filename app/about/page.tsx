@@ -210,6 +210,21 @@ export default function Page() {
                 />
               </td>
             </tr>
+            <tr className="whitespace-nowrap">
+              <td className="px-1 py-1 max-w-fit">
+                <Image
+                  src={`/static/img/country-flags/ID.svg`}
+                  className="object-cover object-center"
+                  alt="Indonesia"
+                  width="100"
+                  height="100"
+                  style={imageStyle}
+                />
+              </td>
+              <td className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
+                <p>Indonesia</p>
+              </td>
+            </tr>
           </tbody>
           <thead className="bg-white text-black antialiased dark:bg-gray-950 dark:text-white">
             <tr>
