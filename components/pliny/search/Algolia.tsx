@@ -10,7 +10,7 @@ import type {
   DocSearchProps,
   DocSearchModalProps,
 } from '@docsearch/react'
-import type { InternalDocSearchHit, StoredDocSearchHit } from '@docsearch/react/dist/esm/types'
+// import type { InternalDocSearchHit, StoredDocSearchHit } from '@docsearch/react/dist/esm/types'
 
 export type AlgoliaSearchProps = {
   algoliaConfig: DocSearchProps
@@ -47,15 +47,15 @@ const CustomLink = ({ href, ...rest }: LinkProps & AnchorHTMLAttributes<HTMLAnch
   return <a target="_blank" rel="noopener noreferrer" href={href} {...rest} />
 }
 
-function Hit({
-  hit,
-  children,
-}: {
-  hit: InternalDocSearchHit | StoredDocSearchHit
-  children: React.ReactNode
-}) {
-  return <CustomLink href={hit.url}>{children}</CustomLink>
-}
+// function Hit({
+//   hit,
+//   children,
+// }: {
+//   hit: InternalDocSearchHit | StoredDocSearchHit
+//   children: React.ReactNode
+// }) {
+//   return <CustomLink href={hit.url}>{children}</CustomLink>
+// }
 
 export const AlgoliaSearchContext = React.createContext<AlgoliaSearchContext>(
   {} as AlgoliaSearchContext
@@ -166,7 +166,7 @@ export const AlgoliaSearchProvider: React.FC<React.PropsWithChildren<AlgoliaSear
             initialQuery={initialQuery}
             navigator={navigator}
             transformItems={transformItems}
-            hitComponent={Hit}
+            // hitComponent={Hit}
             {...algoliaConfig}
           />,
           document.body
